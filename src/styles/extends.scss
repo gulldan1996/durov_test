@@ -1,0 +1,39 @@
+%small-size {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  @media (max-width: $break-point-phone) {
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+
+%normal-size {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+  @media (max-width: $break-point-phone) {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+%middle-size {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 29px;
+  @media (max-width: $break-point-phone) {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+%big-size {
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 37px;
+  @media (max-width: $break-point-phone) {
+    font-size: 24px;
+    line-height: 29px;
+  }
+}

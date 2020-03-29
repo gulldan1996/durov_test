@@ -1,0 +1,65 @@
+@import '../../../index.scss';
+
+.footer {
+  &__list {
+    margin-top: 100px;
+    &__item {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+
+      max-width: 500px;
+      margin-top: 25px;
+      &-img {
+        border: 1px solid #abffb8;
+        img {
+          width: 117px;
+          height: 117px;
+        }
+      }
+      &-text {
+        position: relative;
+
+        max-width: 358px;
+        margin-left: 20px;
+
+@extend %normal-size;
+
+        &::after {
+          position: absolute;
+          bottom: -15px;
+          left: 0;
+
+          width: 67px;
+          height: 5px;
+
+          content: '';
+
+          background-color: #abffb8;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $break-point-phone) {
+  .footer {
+    &__list {
+      margin-top: 175px;
+      &__item {
+        &-text {
+          margin-left: 15px;
+          &::after {
+            width: 54px;
+          }
+        }
+        &-img {
+          img {
+            width: 87px;
+            height: 87px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+@import '../../index.scss';
+
+.footer__container {
+  min-height: 993px;
+  padding-top: 175px;
+
+  background-image: url('../../assets/waves.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-right: 30px;
+  padding-left: 30px;
+
+  color: #fff;
+
+  &__form {
+    z-index: 2;
+
+    max-width: 457px;
+    min-height: 638px;
+    margin-left: 30px;
+    padding: 38px 27px;
+
+    border: 6px solid #fbfbfb;
+    border-radius: 15px;
+  }
+}
+
+@media (max-width: $break-point-desktop-small) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: $break-point-phone) {
+  .footer__container {
+    padding-top: 0;
+    margin-top: -100px;
+  }
+}
